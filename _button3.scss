@@ -1,0 +1,56 @@
+@import "_variables.scss";
+
+.btn3,
+.btn3:link,
+.btn3:visited{
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    background-color: color(yellow);
+    margin: 1rem auto;
+    font-size: 2rem;
+    border-radius: 10rem;
+    transition: all .3s;
+    position: relative;
+}
+
+
+.btn-yellow {
+    background-color: color(yellow);
+    color: #000;
+}
+
+.btn-yellow::after {
+    background-color: color(yellow);
+    color: #000;
+}
+
+.btn3:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 0.5rem rgba(color(black), $alpha: .6);
+    color: red;
+}
+
+.btn3::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .3s;
+}
+
+.btn3:hover::after{
+    transform: scaleX(1.5) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn3:active{
+    transform: translateY(-1px);
+    transform: scaleX(1.5) scaleY(1.6);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}

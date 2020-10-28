@@ -1,0 +1,25 @@
+@import "_variables.scss";
+@import "_button.scss";
+@import "_button1.scss";
+@import "_button2.scss";
+@import "_button3.scss";
+@import "_button4.scss";
+
+
+.container {
+    width: 80vw;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1rem;
+    font-size: 1.5rem;
+    align-items: center;
+    text-align: center; 
+}
+
+.title {
+    color: black;
+    font-size: 10vh;
+}
+
