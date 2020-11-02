@@ -52,6 +52,7 @@ body {
 .citynight2 {
   height: 30rem;
   position: relative;
+  margin: 2rem;
 }
 
 .citynight2-picture {
@@ -111,6 +112,7 @@ body {
           filter: grayscale(100%);
   border-radius: 0vh;
   border-radius: 3vw;
+  padding: 2rem;
 }
 
 html,
