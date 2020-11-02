@@ -16,18 +16,9 @@ body {
           box-sizing: border-box;
 }
 
-html,
-body {
-  font-size: 62.5%;
-  padding: 0;
-  margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.btn2,
-.btn2:link,
-.btn2:visited {
+.btn,
+.btn:link,
+.btn:visited {
   text-transform: uppercase;
   text-decoration: none;
   padding: 1.5rem 4rem;
@@ -41,12 +32,57 @@ body {
   width: 30rem;
 }
 
-.btn2:hover {
+.btn:hover {
   background-color: #ff0000;
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
   -webkit-box-shadow: 0 10px 0.5rem rgba(0, 0, 0, 0.6);
           box-shadow: 0 10px 0.5rem rgba(0, 0, 0, 0.6);
+}
+
+html,
+body {
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.citynight2 {
+  height: 30rem;
+  position: relative;
+}
+
+.citynight2-picture {
+  height: 100%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.citynight2-header {
+  font-size: 3rem;
+  opacity: 0;
+  color: #fff;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.citynight2:hover .citynight2-picture {
+  -webkit-filter: sepia(100%);
+          filter: sepia(100%);
+  margin: 2rem;
+  border-radius: 15rem;
+}
+
+.citynight2:hover .citynight2-header {
+  opacity: 1;
+  top: 45%;
 }
 
 html,
@@ -64,6 +100,7 @@ body {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   margin: 1.5rem;
+  height: 35rem;
 }
 
 .citynight:hover {
@@ -106,7 +143,7 @@ body {
 .fruit-photo:hover {
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
-  outline: 1rem solid lime;
+  outline: 0.5rem solid lime;
   z-index: 2;
 }
 
@@ -144,6 +181,19 @@ body {
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.citynight3 {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.citynight3:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-filter: brightness(200%);
+          filter: brightness(200%);
+  outline: 1rem solid lime;
 }
 
 .container {
